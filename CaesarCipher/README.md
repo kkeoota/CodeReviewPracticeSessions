@@ -1,8 +1,13 @@
 # CaesarCipherFilter
 
+# 方針
+1.  [UNIX哲学](https://ja.wikipedia.org/wiki/UNIX%E5%93%B2%E5%AD%A6)（？）に従い、標準入出力を扱うプログラムを書く。
+2. 極力手抜きする。
+
+
 # 説明
 標準入力から受け取ったテキストをアルファベットで記載された Caesar Ciper とみなし、解読を試み、標準出力に書き出します。
-明示的に offset を指定した場合は、offset だけずらした文字列を、標準出力に書き出します。
+オプションにより明示的に offset を指定した場合は、offset だけずらした文字列を、標準出力に書き出します。
 
 # 使い方
 usage: caesarcipherfilter.py [-h] [--offset OFFSET]
