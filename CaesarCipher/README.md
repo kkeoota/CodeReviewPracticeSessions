@@ -13,7 +13,7 @@
 usage: caesarcipherfilter.py [-h] [--offset OFFSET]
 
 ## 暗号化
-例：
+### 例：
 ```
 cat plain.txt | /usr/local/bin/python3 ./caesarcipherfilter.py --offset -3
 wklv lv wkh slfwxuh wkdw l wrrn lq wkh wuls.
@@ -21,12 +21,18 @@ wklv lv d shq.
 ```
 
 ## 解読
-例：
+### 例1：
 ```
 cat ciper_3.txt | /usr/local/bin/python3 ./caesarcipherfilter.py            
 this is the picture that i took in the trip.
 this is a pen.
 ```
 
+### 例2:
+the, this, that いずれの単語も含まない暗号文の解読も可能
+```
+cat ciper2_4.txt | python3 ./caesarcipherfilter.py                            
+his name is nobita. he is wareing glasses. he is an elementary school student. he lives in tokyo.
+```
 ## See Also
 https://github.com/RobSpectre/Caesar-Cipher
